@@ -111,7 +111,7 @@
 /* BUTTONS */
 /* ========================= */
 
-.hero-buttons {
+.landing-hero-buttons {
   display: flex;
 
   flex-wrap: wrap;
@@ -123,7 +123,7 @@
   margin-top: 28px;
 }
 
-.btn {
+.landing {
   padding: 14px 22px;
 
   border-radius: 10px;
@@ -141,7 +141,7 @@
   min-width: 170px;
 }
 
-.btn.primary {
+.landing.landing-consult-btn {
   border: 2px solid white;
 
   background: transparent;
@@ -149,7 +149,7 @@
   color: white;
 }
 
-.btn.primary:hover {
+.landing.landing-consult-btn:hover {
   background: white;
 
   color: black;
@@ -159,7 +159,7 @@
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
 }
 
-.btn.secondary {
+.landing.landing-portfolio-btn {
   border: 2px solid rgba(255, 255, 255, 0.8);
 
   background: transparent;
@@ -167,7 +167,7 @@
   color: white;
 }
 
-.btn.secondary:hover {
+.landing.landing-portfolio-btn:hover {
   background: white;
 
   color: black;
@@ -334,8 +334,8 @@
 }
 
 @media (max-width: 1043px) {
-  .hero-buttons{
-    gap: 0px;
+  .landing-hero-buttons{
+    gap: 20px;
   }
 }
 
@@ -380,7 +380,7 @@
 }
 
 @media (max-width: 460px) {
-  .btn.secondary {
+  .landing.landing-portfolio-btn {
     padding: 14px 60px;
   }
 }

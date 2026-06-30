@@ -36,10 +36,18 @@ function Hero() {
         </p>
 
         {/* BUTTONS */}
-        <div className="hero-buttons">
-          <button className="btn primary">Consult Our Experts ➜</button>
-          <Link to="/portfolio"><button className="btn secondary">View Our Work</button></Link>
-          
+        
+
+        <div className="landing-hero-buttons">
+          <button className="landing landing-consult-btn">
+            Consult Our Experts ➜
+          </button>
+
+          <Link to="/portfolio">
+            <button className="landing landing-portfolio-btn">
+              View Our Work
+            </button>
+          </Link>
         </div>
 
         {/* CERTIFIED SLIDER */}

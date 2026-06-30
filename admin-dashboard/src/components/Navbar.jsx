@@ -30,9 +30,17 @@ export default function Navbar({ toggleSidebar }) {
         <button className="icon-btn">🔔</button>
         <button className="icon-btn">⚙️</button>
 
-        <button className="view-site">
-          View Site
-        </button>
+        <button
+  className="view-site"
+  onClick={() =>
+    window.open(
+      "https://riveyra-mernproject-fuul43zbe-naina-kesarwanis-projects.vercel.app/",
+      "_blank"
+    )
+  }
+>
+  View Site
+</button>
 
       </div>
 
