@@ -54,7 +54,7 @@ export default function Services({ services, setServices }) {
     const updateStatus = async (id, status) => {
         try {
             const response = await fetch(
-                `http://localhost:5000/api/services/${id}/status`,
+                `https://riveyra.onrender.com/api/services/${id}/status`,
                 {
                     method: "PATCH",
                     headers: {

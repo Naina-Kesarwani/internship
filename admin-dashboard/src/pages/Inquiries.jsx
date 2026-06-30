@@ -119,7 +119,7 @@ export default function Inquiries() {
               {inquiry.resume ? (
 
                 <a
-                  href={`http://localhost:5000/${inquiry.resume}`}
+                  href={`http://riveyra.onrender.com/${inquiry.resume}`}
                   target="_blank"
                   rel="noreferrer"
                   className="resume-download"

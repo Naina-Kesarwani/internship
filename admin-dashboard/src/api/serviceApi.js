@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/services";
+const BASE_URL = "https://riveyra.onrender.com/api/services";
 
 // Get all services
 export const getServices = async () => {
@@ -29,7 +29,7 @@ export const createService = async (serviceData) => {
 };
 
 export const removeService = async (id) => {
-  const response = await fetch(`http://localhost:5000/api/services/${id}`, {
+  const response = await fetch(`http://riveyra.onrender.com/api/services/${id}`, {
     method: "DELETE",
   });
 
@@ -42,7 +42,7 @@ export const removeService = async (id) => {
 
 export const updateService = async (id, serviceData) => {
   const response = await fetch(
-    `http://localhost:5000/api/services/${id}`,
+    `http://riveyra.onrender.com/api/services/${id}`,
     {
       method: "PUT",
       headers: {

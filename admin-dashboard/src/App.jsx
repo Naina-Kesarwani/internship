@@ -33,7 +33,7 @@ function App() {
 
   const fetchServices = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/services");
+      const response = await fetch("https://riveyra.onrender.com/api/services");
 
       if (!response.ok) {
         throw new Error("Failed to fetch services");
@@ -49,7 +49,7 @@ function App() {
   };
   const fetchInquiries = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/inquiries");
+      const response = await fetch("https://riveyra.onrender.com/api/inquiries");
 
       if (!response.ok) {
         throw new Error("Failed to fetch inquiries");
@@ -127,48 +127,3 @@ export default App;
 
 
 
-// import { Routes, Route } from "react-router-dom";
-// import { useState } from "react";
-
-// import Navbar from "./components/Navbar";
-// import Sidebar from "./components/Sidebar";
-
-// import Dashboard from "./pages/Dashboard";
-// import Services from "./pages/Services";
-
-// import "./App.css";
-
-// function App() {
-//   const [sidebarOpen, setSidebarOpen] = useState(true);
-
-//   const toggleSidebar = () => {
-//     setSidebarOpen((prev) => !prev);
-//   };
-
-//   const [services, setServices] = useState([
-//   {
-//     id: 1,
-//     title: "ERP",
-//     description: "test",
-//     status: "Published"
-//   }
-// ]);
-//   return (
-//     <div className="app-container">
-//       <Navbar toggleSidebar={toggleSidebar} />
-
-//       <div className="app-body">
-//         <Sidebar sidebarOpen={sidebarOpen} />
-
-//         <main className="main-content">
-//           <Routes>
-//             <Route path="/" element={<Dashboard />} />
-//             <Route path="/services" element={<Services />} />
-//           </Routes>
-//         </main>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;

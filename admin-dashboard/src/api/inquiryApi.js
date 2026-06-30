@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/inquiries";
+const API_URL = "https://riveyra.onrender.com/api/inquiries";
 
 export const getInquiries = async () => {
   const response = await fetch(API_URL);
