@@ -10,8 +10,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 
 
-// const API_URL = "https://riveyra-backend.onrender.com";
-const API_URL = "http://riveyra.onrender.com";
+const API_URL = "https://riveyra.onrender.com";
 
 
 function Contact() {
