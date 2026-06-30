@@ -34,7 +34,7 @@ export default function Navbar({ toggleSidebar }) {
   className="view-site"
   onClick={() =>
     window.open(
-      "https://riveyra-mernproject-fuul43zbe-naina-kesarwanis-projects.vercel.app/",
+      "https://riveyra-mernproject-r0h4phbtn-naina-kesarwanis-projects.vercel.app/",
       "_blank"
     )
   }
