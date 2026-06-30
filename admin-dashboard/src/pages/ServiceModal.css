@@ -1,0 +1,77 @@
+.service-overlay-box {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  backdrop-filter: blur(6px);
+}
+
+.service-detail-card {
+  width: 420px;
+  max-width: 92%;
+  padding: 24px;
+
+  background: linear-gradient(145deg, #081a3a, #0f2a5f);
+  border-radius: 18px;
+
+  border: 1px solid rgba(96, 165, 250, 0.25);
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  animation: servicePop 0.2s ease forwards;
+}
+
+@keyframes servicePop {
+  from {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.service-detail-title {
+  font-size: 20px;
+  color: #93c5fd;
+  margin-bottom: 12px;
+}
+
+.service-detail-desc {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.service-detail-status {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.service-detail-status span {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.service-detail-close {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+
+  transition: 0.2s ease;
+}
+
+.service-detail-close:hover {
+  transform: translateY(-2px);
+}

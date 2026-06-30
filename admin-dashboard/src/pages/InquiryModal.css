@@ -1,0 +1,78 @@
+.inquiry-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.75); /* dark navy overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  backdrop-filter: blur(6px);
+}
+
+.inquiry-modal-card {
+  width: 420px;
+  max-width: 92%;
+  background: linear-gradient(145deg, #0b1b3a, #0f2a5f);
+  color: #e5e7eb;
+
+  padding: 24px;
+  border-radius: 18px;
+
+  border: 1px solid rgba(96, 165, 250, 0.25);
+
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(59, 130, 246, 0.15);
+
+  transform: scale(0.95);
+  animation: popIn 0.2s ease forwards;
+}
+
+/* animation */
+@keyframes popIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+.inquiry-modal-card h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #93c5fd;
+  letter-spacing: 0.5px;
+}
+
+/* details */
+.inquiry-modal-card p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.inquiry-modal-card strong {
+  color: #60a5fa;
+}
+
+/* close button */
+.close-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px;
+
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.close-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}

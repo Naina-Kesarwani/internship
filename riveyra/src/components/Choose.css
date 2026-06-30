@@ -1,0 +1,274 @@
+.choose-section {
+  background: #0a0a0a;
+  color: #fff;
+  width: 100%;
+  padding: 110px 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* HEADER */
+.choose-header {
+  max-width: 1400px;
+  margin: 0 auto 90px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.choose-header p {
+  color: #8a8a8a;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-family: Arial, sans-serif;
+}
+
+.choose-header h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  max-width: 760px;
+  font-family: Arial, sans-serif;
+}
+
+.choose-header span {
+  margin-top: 20px;
+  color: #8d8d8d;
+  font-size: 16px;
+  max-width: 520px;
+  line-height: 1.8;
+  font-family: Arial, sans-serif;
+}
+
+/* MAIN CONTAINER */
+.choose-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 620px;
+}
+
+/* FLOATING CARD */
+.floating-card {
+  position: absolute;
+  right: 20px;
+  transform: translateY(-50%) rotate(-4deg);
+
+  width: 360px;
+  height: 270px;
+
+   
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 24px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.04);
+
+  transition: all 0.45s ease;
+  z-index: 100;
+}
+
+.floating-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.45));
+}
+
+/* ROW */
+.choose-row {
+  min-height: 95px;
+  display: grid;
+  grid-template-columns: 45% 35%;
+  align-items: center;
+
+  padding: 0 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+/* hover/active background */
+.choose-row.active {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* LEFT */
+.choose-left {
+  font-size: 22px;
+  font-weight: 600;
+  color: #8d8d8d;
+  font-family: Arial, sans-serif;
+  transition: all 0.35s ease;
+}
+
+/* RIGHT */
+.choose-right {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6f6f6f;
+  font-family: Arial, sans-serif;
+  transition: all 0.35s ease;
+}
+
+/* ACTIVE STATE TEXT */
+.choose-row.active .choose-left {
+  color: #fff;
+  transform: translateX(10px);
+}
+
+.choose-row.active .choose-right {
+  color: #fff;
+  transform: translateX(8px);
+}
+
+/* bottom border */
+.bottom-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+@media (max-width: 1150px) {
+  .choose-row {
+    grid-template-columns: 35% 45%;
+  }
+
+  .choose-left {
+    font-size: 18px;
+  }
+
+  .floating-card {
+    width: 300px;
+    height: 230px;
+     padding: 12px;
+  }
+   .floating-card img {
+    width: 85%;
+    height: 85%;
+  }
+
+}
+@media (max-width: 900px) {
+  .choose-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .choose-left {
+    font-size: 18px;
+  }
+
+  .choose-right {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 680px) {
+  .floating-card {
+    padding: 6px;
+    width: 270px;
+    height: 200px;
+   
+  }
+}
+@media (max-width: 640px) {
+  .floating-card {
+    padding: 2px;
+    width: 230px;
+    height: 170px;
+   
+  }
+}
+@media (max-width: 600px) {
+  .choose-left {
+    font-size: 15px;
+  }
+
+  .choose-right {
+    font-size: 12px;
+  }
+}
+@media (max-width: 580px) {
+.floating-card {
+    width: 180px;
+    height: 130px;
+    padding: 1px;
+  }
+
+  .floating-card img {
+    width: 90%;
+    height: 90%;
+  }
+   .choose-left {
+    font-size: 15px;
+  }
+
+  .choose-right {
+    font-size: 12px;
+  }
+  .choose-row {
+ 
+
+  padding: 0 10px;
+ 
+}
+  
+}
+
+@media (max-width: 450px) {
+.floating-card {
+    width: 180px;
+    height: 130px;
+    padding: 1px;
+  }
+
+  .floating-card img {
+    width: 90%;
+    height: 90%;
+  }
+  .choose-row {
+ 
+
+  padding: 0 0px;
+ 
+}
+
+.floating-card {
+ 
+  right: 0px;}
+}
+
+
+@media (max-width: 360px) {
+  .floating-card {
+    width: 180px;
+    height: 130px;
+    padding: 1px;
+  }
+
+  .floating-card img {
+    width: 90%;
+    height: 90%;
+  }
+  
+}

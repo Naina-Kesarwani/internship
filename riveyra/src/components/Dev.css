@@ -1,0 +1,201 @@
+/* Dev.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SECTION HEIGHT = controls scroll duration */
+.dev-section {
+  position: relative;
+  height: 350vh;
+  background: #fff;
+}
+
+/* STICKY AREA */
+.dev-sticky {
+  position: sticky;
+  top: 0;
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+/* CARD ROW */
+.dev-container {
+  width: 100%;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+/* CARD */
+.dev-card {
+  height: 420px;
+
+  background: #f5f5f5;
+
+  border-radius: 28px;
+
+  padding: 30px;
+
+  border: 1px solid rgba(0,0,0,0.08);
+
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+  
+
+  transform: translateY(180px);
+
+  opacity: 0;
+
+  
+
+  transition:
+    transform 0.08s linear,
+    opacity 0.08s linear,
+    box-shadow 0.3s ease;
+
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08),
+    0 20px 60px rgba(0,0,0,0.04);
+}
+
+/* HOVER */
+.dev-card:hover {
+  transform: translateY(0px) scale(1.03) !important;
+
+  border: 1px solid rgba(0,0,0,0.15);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.12),
+    0 25px 80px rgba(0,0,0,0.08);
+}
+
+.dev-icon {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+
+  color: #000;
+
+  margin-bottom: 40px;
+}
+
+/* TITLE */
+.dev-card h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+
+  color: #000;
+}
+
+/* TEXT */
+.dev-card p {
+  color: #4b5563;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+}
+.dev-card button {
+  margin-top: 35px;
+
+  padding: 14px 28px;
+
+  border-radius: 20px;
+
+  border: 2px solid #000;
+
+  background: transparent;
+
+  color: #000;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.35s ease;
+
+}
+
+/* HOVER EFFECT */
+.dev-card button:hover {
+  background: #000;
+
+  color: #fff;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1235px) {
+  .dev-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+@media (max-width: 642px) {
+  .dev-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 642px) {
+  .dev-section {
+    height: auto;
+  }
+
+  .dev-sticky {
+    position: static;
+    height: auto;
+    overflow: visible;
+  }
+
+  .dev-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 16px;
+  }
+
+  .dev-card {
+    height: auto;
+    min-height: 280px;
+
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

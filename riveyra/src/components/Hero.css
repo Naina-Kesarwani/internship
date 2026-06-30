@@ -1,0 +1,386 @@
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+  
+
+
+/* ========================= */
+/* BACKGROUND */
+/* ========================= */
+
+.hero-bg {
+  width: 100%;
+  max-width: 100%;
+
+  height: 100vh;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* ========================= */
+/* OVERLAY */
+/* ========================= */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.82),
+    rgba(0, 0, 0, 0.28)
+  );
+
+  z-index: 1;
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+/* .hero-content {
+  position: absolute;
+
+  top: 50%;
+  left: 80px;
+  right: 80px;
+
+  transform: translateY(-50%);
+
+  width: auto;
+  max-width: 1200px;
+
+  color: white;
+
+  z-index: 10;
+} */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  right: 80px;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: white;
+}
+
+/* ========================= */
+/* HEADINGS */
+/* ========================= */
+
+.hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  letter-spacing: -2px;
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.hero-content p {
+  margin-top: 24px;
+
+  width: min(600px, 70%);
+
+  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+.hero-buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+.btn {
+  padding: 14px 22px;
+
+  border-radius: 10px;
+
+  font-size: clamp(14px, 1vw, 17px);
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.35s ease;
+
+  width: auto;
+
+  min-width: 170px;
+}
+
+.btn.primary {
+  border: 2px solid white;
+
+  background: transparent;
+
+  color: white;
+}
+
+.btn.primary:hover {
+  background: white;
+
+  color: black;
+
+  transform: scale(1.04);
+
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+.btn.secondary {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
+  background: transparent;
+
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: white;
+
+  color: black;
+
+  transform: translateX(5px);
+}
+
+/* ========================= */
+/* CERTIFIED BOX */
+/* ========================= */
+
+.cert-box {
+   margin-top: 5px;
+  position: relative;
+
+   bottom: auto;
+
+    width: clamp(240px, 80vw, 560px);
+  max-width: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 20px;
+
+  padding: clamp(8px, 1vw, 14px);
+
+  overflow: hidden;
+
+  background: rgba(0, 0, 0, 0.22);
+
+  backdrop-filter: blur(10px);
+
+  
+  
+}
+
+.cert-box p {
+  margin: 0 0 8px 0;
+
+  color: #ccc;
+
+  font-size: clamp(10px, 1vw, 14px);
+
+  letter-spacing: 1px;
+}
+
+/* ========================= */
+/* SLIDER */
+/* ========================= */
+
+.slider {
+  display: flex;
+  align-items: center;
+
+  gap: clamp(10px, 1vw, 18px);
+
+  width: max-content;
+
+  animation: marquee 20s linear infinite;
+}
+
+.slider:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 9px));
+  }
+}
+
+.logo-card {
+  width: clamp(70px, 14vw, 170px);
+
+  height: clamp(42px, 7vw, 95px);
+
+  border-radius: clamp(10px, 1.5vw, 20px);
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  background: rgba(20, 20, 20, 0.55);
+    /* background: red !important; */
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: clamp(6px, 0.8vw, 12px);
+}
+
+.logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: contain;
+
+}
+
+
+
+/* ========================= */
+/* WHATSAPP */
+/* ========================= */
+
+.whatsapp {
+  position: fixed;
+
+  right: 18px;
+  bottom: 18px;
+
+  width: 60px;
+  height: 60px;
+
+  background: #25d366;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 30px;
+
+  z-index: 999999;
+
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+
+  transition: all 0.3s ease;
+}
+
+.whatsapp:hover {
+  transform: scale(1.08);
+
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.7);
+}
+
+
+
+
+/* reponsivenes */
+@media (max-width: 1043px) {
+  .hero-content {
+    left: 24px;
+    right: 24px;
+
+    width: auto;
+  }
+}
+
+@media (max-width: 1043px) {
+  .hero-buttons{
+    gap: 0px;
+  }
+}
+
+
+
+/* very small phones */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    position: absolute;
+    top: 90px;          /* push below navbar */
+    transform: none;    /* REMOVE centering */
+    left: 16px;
+    right: 16px;
+  }
+   .heading {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    letter-spacing: -1px;
+  }
+  
+  .hero {
+    min-height: 100vh;
+  } 
+
+  .hero-bg {
+    height: 100vh;
+  }
+  .slider {
+    gap: 10px;
+  }
+
+  .logo-card {
+    width: 80px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 460px) {
+  .btn.secondary {
+    padding: 14px 60px;
+  }
+}

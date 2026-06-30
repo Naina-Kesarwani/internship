@@ -1,0 +1,67 @@
+/* SECTION */
+.number-section {
+  background-color: #0b0b0b;
+  color: white;
+
+  padding: 100px 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 35px;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* CARD */
+.number-card {
+  width: 240px;
+  background-color: #111111;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+
+  padding: 40px 25px;
+  text-align: center;
+
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+/* HOVER */
+.number-card:hover {
+  transform: translateY(-8px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.08);
+}
+
+/* NUMBER */
+.number-value {
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+}
+
+/* LINE */
+.number-line {
+  width: 60px;
+  height: 2px;
+  background-color: white;
+  margin: 22px auto;
+  border-radius: 10px;
+}
+
+/* TITLE */
+.number-title {
+  color: #d4d4d8;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+}

@@ -1,0 +1,96 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+}
+
+.modal-box {
+  width: 92%;
+  max-width: 500px;
+
+  background: linear-gradient(135deg, #172554, #1e3a8a);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+
+  padding: 24px;
+  border-radius: 16px;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* FORM GROUP */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+/* RED STAR */
+.required {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+/* INPUTS */
+.modal-box input,
+.modal-box textarea {
+  padding: 10px 12px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  background: #0f172a;
+  color: white;
+
+  outline: none;
+  font-size: 14px;
+}
+
+.modal-box textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+/* ACTIONS */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.save-btn {
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.modal-actions button:not(.save-btn) {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  cursor: pointer;
+}

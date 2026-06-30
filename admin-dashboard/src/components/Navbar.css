@@ -1,0 +1,133 @@
+.menu-btn {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+
+  color: white;
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+
+  flex-shrink: 0;
+}
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 16px;
+ background: linear-gradient(
+  135deg,
+  #0b1220 0%,
+  #111827 50%,
+  #172554 100%
+);
+  color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LEFT SIDE */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-width: 0;
+}
+
+.logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app-name {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.divider {
+  opacity: 0.5;
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* ICON BUTTONS */
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* VIEW SITE BUTTON */
+.view-site {
+  background: #2563eb;
+  border: none;
+  color: white;
+
+  padding: 6px 12px;
+  border-radius: 8px;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .breadcrumb {
+    display: none; /* hides text to avoid overflow */
+  }
+
+  .view-site {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
