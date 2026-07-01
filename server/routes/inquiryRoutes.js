@@ -56,9 +56,13 @@ router.get("/", async (req, res) => {
 
 router.delete("/:id", async (req, res) => {
   try {
+    console.log("DELETE REQUEST:", req.params.id);
+
     const { id } = req.params;
 
     const deletedInquiry = await Inquiry.findByIdAndDelete(id);
+
+    console.log("Deleted:", deletedInquiry);
 
     if (!deletedInquiry) {
       return res.status(404).json({ message: "Inquiry not found" });
@@ -67,6 +71,7 @@ router.delete("/:id", async (req, res) => {
     res.json({ message: "Inquiry deleted successfully" });
 
   } catch (error) {
+    console.log(error);
     res.status(500).json({ message: error.message });
   }
 });
