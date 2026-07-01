@@ -63,14 +63,14 @@ export default function Dashboard({ services, inquiries }) {
         </div>
 
 
-        <div className="stat-card platforms-card">
+        <div className="stat-card platforms-card" onClick={() => navigate("/platforms")}>
           <div className="stat-top">
             <div className="stat-icon">
               <Layers size={38} />
             </div>
 
             <div className="stat-number">
-              14
+              4
             </div>
           </div>
 
@@ -78,19 +78,19 @@ export default function Dashboard({ services, inquiries }) {
           <span className="stat-growth">Currently Active</span>
         </div>
 
-        <div className="stat-card case-card">
+        <div className="stat-card case-card" onClick={() => navigate("/industries")}>
           <div className="stat-top">
             <div className="stat-icon">
               <FileText size={38} />
             </div>
 
             <div className="stat-number">
-              8
+              4
             </div>
           </div>
 
-          <p className="stat-title">Case Studies</p>
-          <span className="stat-growth">Published Studies</span>
+          <p className="stat-title">Industries</p>
+          <span className="stat-growth">Explore Industries</span>
         </div>
 
       </div>
@@ -103,7 +103,7 @@ export default function Dashboard({ services, inquiries }) {
           <div className="panel-header">
             <h3>Recent Leads</h3>
 
-            <button className="view-btn">
+            <button className="view-btn" onClick={() => navigate("/inquiries")}>
               View All
               <ArrowRight size={16} />
             </button>
@@ -120,13 +120,13 @@ export default function Dashboard({ services, inquiries }) {
             <h3>Quick Actions</h3>
           </div>
 
-          <div className="quick-actions">
-            <button className="action-btn">
+          <div className="quick-actions" >
+            <button className="action-btn" onClick={() => navigate("/services")}>
               <Plus size={18} />
               Add New Service
             </button>
 
-            <button className="action-btn">
+            <button className="action-btn" onClick={() => navigate("/platforms")}>
               <Plus size={18} />
               Add New Platform
             </button>
